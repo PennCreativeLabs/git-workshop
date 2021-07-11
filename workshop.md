@@ -283,28 +283,27 @@ This will trigger a conflict which you will have to fix.
 We now practise fixing merge conflicts. Recall that conflicts are caused
 by merges which affect the same block of code.
 
-Here’s a branch I prepared earlier. The branch is called `alpher`. Run
-the code below to set it up (don’t worry if you can’t understand it)
+Here’s a branch I prepared earlier. The branch is called `merge-conflict-practice`. Let's run 
+the code below to switch to this branch:
 
-    $ git checkout alpher
+    $ git checkout merge-conflict-practice
 
-You should now have a new branch called `alpher`. Try merging that
-branch into `master` now and fix the ensuing conflict.
+Let's now try to merge this branch into master. 
 
 
 Fixing a conflict
 -----------------
 
-You should see a `conflict` with the `gamow.txt` file. This means that
+You should see a `conflict` with the `blinding_lights.txt` file. This means that
 the same line of text was edited and committed on both the master branch
-and the alpher branch. The output below basically tells you the current
+and the `merge-conflict-practice` branch. The output below basically tells you the current
 situation :
 
-    Auto-merging gamow.txt
-    CONFLICT (content): Merge conflict in gamow.txt
+    Auto-merging blinding_lights.txt
+    CONFLICT (content): Merge conflict in blinding_lights.txt
     Automatic merge failed; fix conflicts and then commit the result.
 
-If you open the `gamow.txt` file, you will see something similar as
+If you open the `blinding_lights.txt` file, you will see something similar as
 below:
 
     $ cat gamow.txt
@@ -319,11 +318,11 @@ below:
 Git uses pretty much standard conflict resolution markers. The top part
 of the block, which is everything between `<<<<<< HEAD` and `======` is
 what was in your current branch.\
-The bottom half is the version that is present from the `alpher` branch.
+The bottom half is the version that is present from the `merge-conflict-practice` branch.
 To resolve the conflict, you either choose one side or merge them as you
 see fit.
 
-For example, I might decide to choose the version from the `alpher`
+For example, I might decide to choose the version from the `merge-conflict-practice`
 branch.
 
 Now, try to **fix the merge conflict**. Pick the text that you think is
@@ -333,7 +332,7 @@ Once I have done that, I can then mark the conflict as fixed by using
 `git add` and `git commit`.
 
 
-    $ git add gamow.txt
+    $ git add blinding_lights.txt.txt
     $ git commit -m "Fixed conflict"
 
 Congratulations. You have fixed the conflict. All is good in the world.
