@@ -1,9 +1,9 @@
 Starting your journey
 ---------------------
 
-First, open up a terminal and clone this repository:
+First, open up a terminal and clone this repository using SSH:
 
-    $ git clone 
+    $ git clone git@github.com:PennCreativeLabs/git-workshop.git
 
 You may want to fork (create your own copy of) the project on github and
 clone from your own repo. You can find the fork button at the top right of
@@ -44,7 +44,7 @@ You finalize the process and record it into the git index by using
 
 Let’s add the files to the staging area
 
-    $ git add akshay.txt gugh.txt
+    $ git add song.txt movie.txt
 
 or 
     $ git add .
@@ -84,7 +84,7 @@ You should see something similar to:
     Author: <your_name> 
     Date:   <curr_date>
 
-        I am adding two new files
+        add two new txt files
 
     diff --git a/song.txt b/movie.txt
     new file mode 100644
@@ -272,13 +272,10 @@ Do you see the following output ?
 You have to be in the branch you want merge *into* and then you always
 specify the branch you want to merge.
 
-At this point, you can also try out `gitk` to visualize the changes and
-how the two branches have merged
-
 Merge Conflicts
 ---------------
 
-Git is pretty good at merging automagically, even when the same file is
+Git is pretty good at merging automatically, even when the same file is
 edited. There are however, some situations where the same line of code
 is edited there is no way a computer can figure out how to merge.\
 This will trigger a conflict which you will have to fix.
@@ -410,7 +407,7 @@ Let’s collaborate !
 Check out the `pull_request` branch on this repository for further instructions!
 You can always get back to this version of the readme by checking out the master branch.
 
-Fin
+Congrats!
 ---
 
 You have learnt:
