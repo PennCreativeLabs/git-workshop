@@ -187,7 +187,7 @@ itself, will list the branches you currently have
     $ git branch
 
 The `*` should indicate the current branch you are on, which is
-`master`.
+`main`.
 
 If you wish to start another branch, use
 `git checkout -b (branch-name)` :
@@ -198,7 +198,7 @@ Try git branch again to check which branch you are currently on:
 
     $ git branch
       dev
-    * master
+    * main
 
 The new branch is now created. Now let’s work in that branch. To switch
 to the new branch:
@@ -213,21 +213,21 @@ Let’s perform some commits now,
     $ git add test.txt
     $ git commit -m "Added experimental txt"
 
-Now, let’s compare them to the master branch. Use `git diff`
+Now, let’s compare them to the main branch. Use `git diff`
 
-    $ git diff master
+    $ git diff main
 
 Basically what the above output says is that `test.txt` is present on
-the `dev` branch, but is absent on the `master` branch.
+the `dev` branch, but is absent on the `main` branch.
 
 
 Now you see me, now you don’t
 -----------------------------
 
 Git is good enough to handle your files when you switch between
-branches. Switch back to the `master` branch
+branches. Switch back to the `main` branch
 
-Try switching back to the master branch (Hint: It’s the same command we
+Try switching back to the main branch (Hint: It’s the same command we
 used to switch to the dev branch above)
 
 Now, where’s our `test.txt` file ?
@@ -253,12 +253,12 @@ together after the conclusion of work.\
 Git merging works by first switching the branch you want to *into*, and
 then running the command to merge the other branch in.
 
-We now want to merge our `dev` branch into `master`. First, switch to
-the `master` branch.
+We now want to merge our `dev` branch into `main`. First, switch to
+the `main` branch.
 
-    git checkout master
+    git checkout main
 
-Next, we merge the `dev` branch into `master` :
+Next, we merge the `dev` branch into `main` :
 
     $ git merge dev
 
@@ -339,7 +339,7 @@ Let’s collaborate !
 -------------------
 
 Check out the `pull_request` branch on this repository for further instructions!
-You can always get back to this version of the readme by checking out the master branch.
+You can always get back to this version of the readme by checking out the main branch.
 
 Congrats!
 ---
