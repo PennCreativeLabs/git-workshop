@@ -3,7 +3,7 @@ Starting your journey
 
 First, open up a terminal and clone this repository using SSH:
 
-    $ git clone git@github.com:PennCreativeLabs/git-workshop.git
+    $ git clone git@github.com:PennSpark/git-workshop.git
 
 You may want to fork (create your own copy of) the project on github and
 clone from your own repo. You can find the fork button at the top right of
